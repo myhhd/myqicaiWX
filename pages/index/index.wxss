@@ -1,0 +1,15 @@
+/**index.wxss**/
+.index-nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top:10rpx;
+  padding:0 5rpx;
+}
+.nav-item{
+  width:49%;
+}
+.nav-item image{
+  width:100%;
+  height:300rpx;
+}

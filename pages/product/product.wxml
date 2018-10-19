@@ -1,0 +1,23 @@
+<!--pages/product/product.wxml-->
+<view class='slider'>
+  <!-- 图片轮播 -->
+  <swiper autoplay interval='3500' indicator-dots='{{true}}'>
+    <swiper-item wx:for="{{ImgList}}" wx:key="{{id}}">
+      <image src='{{item.img_url}}' mode='aspectFill' lazy-load></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class='search'>
+  <image src='../../images/search.png'></image>
+  <input type='text' placeholder="商品搜索：请输入商品关键字"></input>
+</view>
+<view class='pcard'>
+  <view class='card' wx:for="{{proList}}" wx:key="{{id}}">
+    <image src='{{item.img_url}}' mode='aspectFill' lazy-load  bindtap='showDetail' data-pid='{{item.pid}}'></image>
+    <text class='pname'>{{item.pname}}</text>
+    <text class='price'>￥{{item.price}}</text>
+  </view>
+</view>
+<view class='voucher'>
+  <text>粤ICP备17060147号-1</text>
+</view>

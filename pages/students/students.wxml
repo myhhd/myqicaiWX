@@ -1,0 +1,17 @@
+<!--pages/students/students.wxml-->
+<view class='slider'>
+  <!-- 图片轮播 -->
+  <swiper autoplay interval='3500' indicator-dots='{{true}}'>
+    <swiper-item wx:for="{{ImgList}}" wx:key="{{id}}">
+      <image src='{{item.img_url}}' mode='aspectFill' lazy-load></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class='card' wx:for="{{list}}" wx:key="{{id}}">
+  <text class='card-title'>学员-{{item.name}}</text>
+  <text class='card-EnglishName'>cadet--{{item.EnglistName}}</text>
+  <image src='{{item.img_url}}'></image>
+</view>
+<view class='voucher'>
+  <text>粤ICP备17060147号-1</text>
+</view>

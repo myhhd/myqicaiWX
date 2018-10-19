@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/product/product",
+    "pages/courseItem/courseItem",
+    "pages/course/course",
+    "pages/students/students",
+    "pages/team/team",
+    "pages/details/details",
+    "pages/logs/logs" 
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "七彩旋律琴行",
+    "navigationBarTextStyle": "black"
+  }
+}

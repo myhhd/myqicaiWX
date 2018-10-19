@@ -1,0 +1,72 @@
+/* pages/courseItem/courseItem.wxss */
+page{
+  text-align: center;
+  padding:0 10rpx;
+  font-size:14px;
+}
+.classImg{
+  width:100%;
+  height:480rpx;
+  text-align: center;
+}
+.classImg image{
+  width:560rpx;
+  height:480rpx;
+}
+.phone{
+  width:300rpx;
+  height:60rpx;
+  color:#fff;
+  background:#000;
+  text-align: center;
+  margin:20rpx auto;
+  line-height: 60rpx;
+}
+.courTitle{
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color:#fff;
+  width:370rpx;
+  margin: 0 auto;
+  padding:20rpx 75rpx;
+}
+.courCla{
+  font-size:18px;
+  font-weight: bold;
+}
+.teach{
+  display: flex;
+}
+.teach image{
+  width:50%;
+  height:360rpx;
+}
+.teachdetail{
+  display: flex;
+  flex-direction: column;
+  padding:20rpx;
+}
+.teachTit{
+  font-size:18px;
+  font-weight: bold;
+}
+.teaSub{
+  font-size:16px;
+  color:#797979;
+}
+.advantage,
+.outline{
+  display: flex;
+  flex-direction: column;
+  padding: 0 30rpx;
+  text-align: start;
+}
+.outline{
+  text-align: end;
+}
+.advTit{
+  font-size:18px;
+  font-weight: bold;
+  margin: 50rpx 0;
+}

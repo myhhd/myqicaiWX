@@ -1,0 +1,49 @@
+<!--pages/courseItem/courseItem.wxml-->
+<view class='classImg'>
+  <image src='{{info.img_1}}' mode='aspectFill' lazy-load></image>
+</view>
+<view class='divider'></view>
+<text>专业一对一/小组课</text>
+<view class='divider'></view>
+<view class='phone' bindtap='phoneCall'>
+  <text>联系我们</text>
+</view>
+<image src='{{info.img_2}}' mode='aspectFill' lazy-load></image>
+<view class='courTitle'>
+  <text class='courCla'>{{info.courCla}}</text>
+  <text>为你提供优质的音乐生活环境成全你的改变心愿</text>
+</view>
+<view class='teach'>
+  <image src='{{info.img_3}}' mode='aspectFill' lazy-load></image>
+  <view class='teachdetail'>
+    <text class='teachTit'>课程</text>
+    <text class='teaSub'>时长：</text>
+    <text>一对一：</text>
+    <text>1课时=1小时</text>
+    <text>小组课：</text>
+    <text>1课时=1小时30分</text>
+    <text class='teaSub'>类别：</text>
+    <text>{{info.teachTit}}</text>
+  </view>
+</view>
+<view class='advantage'>
+  <text class='advTit'>课程优势</text>
+  <text>国内顶级师资团队</text>
+  <text>学前等级测试</text>
+  <text>专业完备的课程体系</text>
+  <text>电子化教务约课流程</text>
+  <text>提供精选国内外海量教材</text>
+  <text>教学交流群随时解答疑惑</text>
+</view>
+<view class='outline'>
+  <text class='advTit'>课程大纲(第一期)</text>
+  <text>{{info.adv_1}}</text>
+  <text>{{info.adv_2}}</text>
+  <text>{{info.adv_3}}</text>
+  <text>{{info.adv_4}}</text>
+  <text>{{info.adv_5}}</text>
+  <text>{{info.adv_6}}</text>
+</view>
+<view class='voucher'>
+  <text>粤ICP备17060147号-1</text>
+</view>

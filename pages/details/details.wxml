@@ -1,0 +1,40 @@
+<!--pages/details/details.wxml-->
+<view class='slider'>
+  <!-- 图片轮播 -->
+  <swiper autoplay interval='3500' indicator-dots='{{true}}'>
+    <swiper-item wx:for="{{imgBan}}" wx:key="{{id}}">
+      <image src='{{item.img_url}}' mode='aspectFill' lazy-load></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class='divider'></view>
+<view class='introduce'>
+  <text class='int_title'>{{details.title}}</text>
+  <text>
+    <text class='newPrice'>特惠价：￥{{details.newPrice}}</text>
+    <text class='oldPrice'>原价：{{details.oldPrice}}</text>
+  </text>
+  <text>
+    <text class='inventory'>库存：{{details.inventory}}件</text>
+    <text class='carriage'>运费：{{details.carriage}}</text>
+  </text>
+</view>
+<view class='divider'></view>
+<view class='comment'>
+  <text>宝贝评价（0）</text>
+</view>
+<view class='divider'></view>
+<view class='detail'>
+  <text>{{Info.InfoTitle}}</text>
+  <text>面板：{{Info.Info1}}</text>
+  <text>地侧板：{{Info.Info2}}</text>
+  <text>指板&琴码：{{Info.Info3}}</text>
+  <text>琴弦：{{Info.Info4}}</text>
+  <text>琴颈：{{Info.Info5}}</text>
+  <text>弦枕：{{Info.Info6}}</text>
+  <text>弦钮：{{Info.Info7}}</text>
+  <text>特点：{{Info.Info8}}</text>
+</view>
+<view class='style-img' wx:for="{{imgList}}" wx:key="{{id}}">
+  <image src='{{item.img_url}}' mode='aspectFill' lazy-load></image>
+</view>
