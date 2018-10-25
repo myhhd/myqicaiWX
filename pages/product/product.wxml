@@ -13,11 +13,13 @@
 </view>
 <view class='pcard'>
   <view class='card' wx:for="{{proList}}" wx:key="{{id}}">
-    <image src='{{item.img_url}}' mode='aspectFill' lazy-load  bindtap='showDetail' data-pid='{{item.pid}}'></image>
-    <text class='pname'>{{item.pname}}</text>
+    <image src='{{item.sm_url}}' mode='aspectFill' lazy-load  bindtap='showDetail' data-pid='{{item.pid}}'></image>
+    <text class='pname'>{{item.title}}</text>
     <text class='price'>￥{{item.price}}</text>
   </view>
 </view>
+<view class='loadmore loading' wx:if="{{hasMore}}">正在加载...</view>
+<view class='loadmore' wx:else="{{hasMore}}">已经没有更多数据了</view>
 <view class='voucher'>
   <text>粤ICP备17060147号-1</text>
 </view>
