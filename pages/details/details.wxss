@@ -42,7 +42,70 @@
 }
 .style-img{
   width:100%;
+  padding-bottom:150rpx;
 }
 .style-img image{
   width:100%;
+}
+.cell{
+  background-color: #eee;
+  font-size: 16px;
+  width:750rpx;
+  height:120rpx;
+  position: fixed;
+  bottom:0;
+}
+.cell-item{
+  border-bottom:1rpx solid #ddd;
+  padding:20rpx 10rpx;
+}
+.cell-item image{
+  width:60rpx;
+  height:60rpx;
+}
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.cell-item button{
+  width:240rpx;
+  height:80rpx;
+  color:#fff;
+}
+.addCartBtn{
+  background:orange;
+}
+.buyBtn{
+  background:red;
+}
+.cart-item{
+  position: fixed;
+  bottom:120rpx;
+  width:750rpx;
+  height:200rpx;
+  background: #eee;
+}
+cover-view{
+  font-size:12px;
+}
+.cart-item-detail{
+  display: flex;
+  width:750rpx;
+  height:120rpx;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom:1px solid #aaa;
+}
+cover-image{
+  width:100rpx;
+  height:100rpx;
+}
+.cart-item-num{
+  display:flex;
+  width:750rpx;
+  height:80rpx;
+  justify-content: space-around;
+  align-items:center;
 }

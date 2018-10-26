@@ -38,3 +38,27 @@
 <view class='style-img' wx:for="{{imgList}}" wx:key="{{id}}">
   <image src='{{item.img_url}}' mode='aspectFill' lazy-load></image>
 </view>
+<view class="cell">
+  <view class='cell-item arrow'>
+    <image src="../../images/home.png" bindtap='backHome'></image>
+    <button class="addCartBtn" bindtap='addCartTo'>加入购物车</button>
+    <button class='buyBtn'>立刻购买</button>
+  </view>
+</view>
+<cover-view class="cart-item" wx:if="{{showCart}}">
+  <cover-view class='cart-item-detail'>
+    <cover-image src="../../images/detail-1.png"></cover-image>
+    <cover-view>
+      <cover-view>手工全单云杉桃花芯：A3/A3C</cover-view>
+      <cover-view>￥3800.00</cover-view>
+    </cover-view>
+    <cover-view><button size="mini" bindtap='closeCart'> X </button></cover-view>
+  </cover-view>
+  <cover-view class='cart-item-num'>
+    <cover-view>购买数量：</cover-view>
+    <cover-view><button size="default"> － </button></cover-view>
+    <cover-view>1</cover-view>
+    <cover-view><button size="default"> ＋ </button></cover-view>
+    <cover-view>库存：8件</cover-view>
+  </cover-view>
+</cover-view>

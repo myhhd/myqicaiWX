@@ -9,7 +9,8 @@ Page({
     details:{},
     Info:{},
     imgList:[],
-    Title:''
+    Title:'',
+    showCart:false
   },
 
   /**
@@ -81,5 +82,20 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  backHome:function(){
+    wx.reLaunch({
+      url: '../index/index',
+    })
+  },
+  addCartTo:function(){
+    this.setData({
+      showCart:true
+    })
+  },
+  closeCart:function(){
+    this.setData({
+      showCart:false
+    })
   }
 })
