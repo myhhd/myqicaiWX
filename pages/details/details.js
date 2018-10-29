@@ -10,7 +10,10 @@ Page({
     Info:{},
     imgList:[],
     Title:'',
-    showCart:false
+    showCart:false,
+    num:1,
+    getCart:false,
+    buyIt:false
   },
 
   /**
@@ -83,19 +86,54 @@ Page({
   onShareAppMessage: function () {
   
   },
+  //返回首页
   backHome:function(){
     wx.reLaunch({
       url: '../index/index',
     })
   },
+  //添加到购物车
   addCartTo:function(){
     this.setData({
-      showCart:true
+      showCart:true,
+      getCart:true,
+      buyIt:false
     })
   },
+  //立刻购买
+  buyItTo:function(){
+    this.setData({
+      showCart: true,
+      buyIt:true,
+      getCart:false
+    })
+  },
+  //关闭购物车
   closeCart:function(){
     this.setData({
-      showCart:false
+      showCart:false,
+      getCart:false,
+      buyIt:false
+    })
+  },
+  //增加购买数量
+  addnum:function(){
+    var san=this.data.num;
+    san++;
+    this.setData({
+      num:san
+    })
+  },
+  //减少购买数量
+  subtract:function(){
+    var san=this.data.num;
+    if(san>1){
+      san--;
+    }else{
+      san=1;
+    }
+    this.setData({
+      num:san
     })
   }
 })
